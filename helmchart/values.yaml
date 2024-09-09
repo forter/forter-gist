@@ -19,6 +19,8 @@ basechart:
           value: "/opengist"
         - name: OG_OIDC_SECRET
           value: "secret/dev/forter-gist/client_secret"
+        - name: OG_OIDC_DISCOVERY_URL
+          value: "https://forter.okta.com/.well-known/openid-configuration"
       ports:
         - port: 6157
           protocol: TCP
