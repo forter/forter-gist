@@ -14,7 +14,7 @@ node('general') {
 	customStages: stages
         credentials: base.get_decrypt_creds(),
         linterReportLocation: 'test-reports/ci-lint-report',
-        masterBranch: 'main',
+        masterBranch: 'master',
         latestTag: 'prod'
 	helm: [
             dist_helm_chart: true,
